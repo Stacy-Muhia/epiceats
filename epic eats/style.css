@@ -1,72 +1,98 @@
-*, body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-  }
-  
-  /* Navigation */
-  .navigation-header {
-    background-color: rgb(73, 51, 153);
-    padding: 0 15px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  nav {
-    width: 100%;
-    max-width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .logo-container > a {
-    color: ghostwhite;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 26px;
-  }
-  .navigation-items {
-    display: flex;
-    gap: 40px;
-  }
-  .navigation-items > a {
-    color: ghostwhite;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 16px;
-    transition: .4s ease-in-out;
-  }
-  .navigation-items > a:hover {
-    color: white;
-  }
-  .hamburger {
-    display: none;
-    font-size: 20px;
-    font-weight: 800;
-    color: white;
-  }
-  @media screen and (max-width:768px) {
-    .hamburger {
-      display: flex;
-      cursor: pointer;
-    }
-    .hamburger #closeHam {
-      display: none;
-    }
-    .navigation-items {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      position: absolute;
-      right: 0;
-      top: 58px;
-      background-color: rgb(73, 51, 153);
-      width: 100%;
-      height: calc(100vh - 58px);
-      padding-top: 60px;
-      gap: 10vh;
-    }
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" ,sans-serif;
+}
+body{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 32%;
+  min-height: 100vh;
+  background: url(https://img.freepik.com/free-photo/restaurant-table-with-cutlery_23-2148172700.jpg?w=740&t=st=1707720971~exp=1707721571~hmac=bc4769af50eab6d784d690b84589915644d491d355ba88881459ac07ccf93176) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.sign{
+  width: 420px;
+  background: #64514B;
+  color: #000;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+.sign h1{
+  font-size: 36px;
+  text-align: center;
+}
+.input-box{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+.input-box input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid #000;
+  border-radius: 40px;
+  font-size: 16px;
+  padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder{
+  color: #000;
+}
+.input-box i{
+  position: absolute;
+  right: 20px;
+  top: 30%;
+  transform: translate(-50%);
+  font-size: 20px;
+}
+.remember{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.9px;
+  margin: -15px 0 15px;
+}
+.remember label input{
+  accent-color: #000;
+  margin-right: 3px;
+}
+.remember a{
+  color: #000;
+  text-decoration: none;
+}
+.remember a:hover{
+  text-decoration: underline;
+}
+.button{
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px #000;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+.reg-link{
+  font-size: 14.9px;
+  text-align: center;
+  margin-top: 20px;
+}
+.reg-link p a{
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+}
+.reg-link p a:hover{
+  text-decoration: underline;
+}
